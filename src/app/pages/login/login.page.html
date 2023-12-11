@@ -1,0 +1,26 @@
+<ion-content [fullscreen]="true">
+  <div>
+    <form [formGroup]="usuario" (ngSubmit)="ingresar()">
+      <ion-card class="label-login">
+        <img src="../../../assets/img/2560px-Logo_DuocUC.svg.png" alt="logo-duoc" width="40%">
+        <h1 class="tituloapp">RegistraAPP</h1>
+        <ion-card-header>
+          <img src="../../../assets/img/login.png" alt="user-login">
+          <h1 class="centrartext">Iniciar Sesión</h1>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-input class="centrarbtn" formControlName="correo" type="text" placeholder="Ingrese correo"></ion-input>
+            <br>
+
+            <ion-input class="centrarbtn" formControlName="clave" type="password" placeholder="Ingrese clave"></ion-input>
+            <br>
+
+
+          <ion-button id="btningresar" type="submit" expand="full" [disabled]="!usuario.valid">Ingresar</ion-button>
+          <a class="centrar-links" routerLink="/registro"><br>Registrar usuario <br></a>
+          <a class="centrar-links" routerLink="/recuperar-pass"><br>Recuperar contraseña <br></a>
+        </ion-card-content>      
+      </ion-card>
+    </form>
+  </div>
+</ion-content>

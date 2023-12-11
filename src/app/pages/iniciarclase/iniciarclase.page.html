@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Iniciar Clase
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">Seleccionar Clase</ion-label>
+        <ion-select [(ngModel)]="clase" placeholder="Seleccione una clase">
+          <ion-select-option *ngFor="let c of clases" [value]="c.id">
+            {{ c.nombre }} - {{ c.cod_clase }}
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+      <!-- Agrega el botón para ir a la página 'generarqr' -->
+      <ion-button expand="full" (click)="navegarAGenerarQR()">Ir a Generar QR</ion-button>
+      
+    </ion-card-content>
+  </ion-card>
+</ion-content>

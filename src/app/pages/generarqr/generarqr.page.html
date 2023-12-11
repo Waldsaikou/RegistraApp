@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulodiseño">Codigo QR</ion-title>
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div class="mycontainer">
+  <ion-item class="diseñoitem">
+    <ion-label class="diseñoexterior" position="stacked">Vuelva a seleccionar una clase</ion-label>
+    <ion-select class="iondiseño" [(ngModel)]="clase" placeholder="Seleccione una clase">
+      
+      <ion-select-option *ngFor="let c of clases" [value]="c.cod_clase">
+        {{ c.nombre }} - {{ c.cod_clase }}
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+  <br><br>
+  <div class="diseñoqr">
+  <qrcode class="qrdiseño" [qrdata]="clase" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+</div>
+</div>
+</ion-content>

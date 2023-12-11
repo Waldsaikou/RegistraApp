@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="tituloclima">Clima</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="mycontainer">
+    <br>
+      <h1 class="tamañotitulo">Buscar ciudad</h1>
+      <br>
+
+      <input class="diseñoBuscarclima" [(ngModel)]="city" type="text">
+
+
+    <button class="btnBuscar" expand="full" (click)="cargarClima()" color="primary">
+      <ion-icon class="iconLupita" name="search-outline" slot="start"></ion-icon> Buscar
+    </button>
+
+    <div class="card text-white bg-primary m-5" style="max-width: 18rem;">
+      <div class="card-header text-center">
+        <h2>{{ city }}</h2>
+        <p><img src="{{ iconURL }}" alt="weather image"></p>
+      </div>
+      <div class="card-body">
+        <p class="card-text">Temperatura: {{ temperature }}°C</p>
+        <p class="card-text">Temperatura Mínima: {{ temperature_min }} °C</p>
+        <p class="card-text">Temperatura Máxima: {{ temperature_max }}°C</p>
+        <p class="card-text">Viento: {{ wind }} km/h</p>
+        <p class="card-text">Humedad: {{ humidity }} %</p>
+      </div>
+    </div>
+  </div>
+</ion-content>

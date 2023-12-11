@@ -1,0 +1,21 @@
+<ion-header>
+  <!-- Puedes agregar elementos a la barra de navegación si es necesario -->
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="fondo">
+    <ion-card>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="stacked">Ingresar Codigo QR:</ion-label>
+          <ion-input [(ngModel)]="data" trim type="text" placeholder="Ingrese código QR"></ion-input>
+        </ion-item>  
+        <ion-button expand="block" [disabled]="asistenciaRegistrada" (click)="ingresarAsistencia()">
+          {{ asistenciaRegistrada ? 'Asistencia Registrada' : 'Ingresar código' }}
+        </ion-button>
+        <!-- Agregado: botón "Presente" -->
+        <ion-button *ngIf="asistenciaRegistrada" color="success" (click)="marcarPresente()">Presente</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

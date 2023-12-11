@@ -1,0 +1,44 @@
+
+.mycontainer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/377/572/desktop-wallpaper-dark-stormy-ocean-stormy-night-in-the-sea-phone.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: blur(0.5px);
+}
+
+  
+.btnBuscar{
+    width: 120px;
+    height: 33px;
+    margin: 15px;
+    border-radius: 50px;
+    background-color: #316FB4 ;
+}
+
+.iconLupita{
+    font-size: 1.2em;
+}
+
+.diseñoBuscarclima{
+    border-color: inherit;
+    background-color: #FFF;
+    border-radius: 50px;
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.tituloclima{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #316FB4;
+    color: #000000;
+}
+
+.tamañotitulo{
+    font-size: 1.2em;
+}

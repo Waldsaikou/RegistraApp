@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Mapa del mundo</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-input type="text" placeholder="Ingrese su dirección" [(ngModel)]="dire"></ion-input>
+  <ion-button (click)="Direccion()">Buscar</ion-button>
+  <div id="map"></div>
+</ion-content>

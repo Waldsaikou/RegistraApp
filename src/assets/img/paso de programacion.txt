@@ -1,0 +1,12 @@
+pasos de programacion
+
+1- instalar node js 18.17.0 https://nodejs.org/es
+
+2- instalar ionic 6
+	npm install -g @ionic/cli@6
+
+3-crear una carpeta y abrir cmd dentro de la carpeta
+
+4-en el cmd poner ionic start
+
+5-ya creado la carpeta del proyecto ingresar con cd/nombre de la carpeta y para levantar la app poner en el cmd ionic server
